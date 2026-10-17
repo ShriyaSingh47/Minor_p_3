@@ -1,0 +1,566 @@
+/* =========================
+   BASIC RESET
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #eef7f7;
+
+    color: #333;
+
+    min-height: 100vh;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background: #323232;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+
+header h1 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+header p {
+    font-size: 17px;
+
+    color: #9ff5ed;
+}
+
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    background-color: white;
+
+    padding: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+nav a {
+    text-decoration: none;
+
+    color: #176b68;
+
+    font-weight: bold;
+
+    margin: 0 25px;
+
+    font-size: 17px;
+}
+
+
+nav a:hover {
+    color: #19b8ad;
+}
+
+
+/* =========================
+   HOME
+   ========================= */
+
+.home {
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+
+.home > h2 {
+    font-size: 32px;
+
+    color: #176b68;
+
+    margin-bottom: 10px;
+}
+
+
+.home > p {
+    color: #666;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================
+   HOME CARDS
+   ========================= */
+
+.home-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 35px;
+
+    flex-wrap: wrap;
+}
+
+
+.home-card {
+    width: 320px;
+
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.home-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+
+.home-card .icon {
+    font-size: 50px;
+
+    margin-bottom: 15px;
+}
+
+
+.home-card h2 {
+    color: #176b68;
+
+    margin-bottom: 15px;
+}
+
+
+.home-card p {
+    color: #666;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
+
+button {
+    background-color: #176b68;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color: #19b8ad;
+
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   APP SECTION
+   ========================= */
+
+.app {
+    width: 90%;
+
+    max-width: 750px;
+
+    margin: 60px auto;
+
+    background-color: white;
+
+    padding: 45px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.app h2 {
+    color: #176b68;
+
+    font-size: 30px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   SEARCH BOX
+   ========================= */
+
+.search-box {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 10px;
+}
+
+
+input {
+    width: 65%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #bbb;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+input:focus {
+    border-color: #19b8ad;
+
+    box-shadow:
+        0 0 5px rgba(25, 184, 173, 0.4);
+}
+
+
+/* =========================
+   WEATHER RESULT
+   ========================= */
+
+#weatherResult {
+    margin-top: 35px;
+}
+
+
+.weather-card {
+    background-color: #e7f8f6;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #19b8ad;
+}
+
+
+.weather-card h2 {
+    color: #176b68;
+
+    margin-bottom: 20px;
+}
+
+
+.weather-card p {
+    background-color: white;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    border-radius: 6px;
+
+    color: #444;
+}
+
+
+/* =========================
+   MOVIE RESULT
+   ========================= */
+
+#movieResult {
+    margin-top: 35px;
+}
+
+
+.movie-card {
+    background-color: #f5fafa;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    margin-top: 20px;
+}
+
+
+.movie-card img {
+    width: 220px;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    margin-bottom: 20px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+.movie-card h2 {
+    color: #176b68;
+
+    margin-bottom: 20px;
+}
+
+
+.movie-card p {
+    margin: 10px 0;
+
+    color: #555;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #323232;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 22px;
+
+    margin-top: 50px;
+}
+
+
+/* =====================================================
+   3D CUBE LOADER
+   ===================================================== */
+
+.cube-loader {
+    position: fixed;
+
+    top: 20px;
+
+    right: 20px;
+
+    width: 75px;
+
+    height: 75px;
+
+    transform-style: preserve-3d;
+
+    transform: rotateX(-30deg);
+
+    animation: animate 4s linear infinite;
+
+    z-index: 1000;
+}
+
+
+@keyframes animate {
+
+    0% {
+        transform: rotateX(-30deg) rotateY(0);
+    }
+
+    100% {
+        transform: rotateX(-30deg) rotateY(360deg);
+    }
+
+}
+
+
+.cube-loader .cube-wrapper {
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    transform-style: preserve-3d;
+}
+
+
+.cube-loader .cube-wrapper .cube-span {
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    transform:
+        rotateY(calc(90deg * var(--i)))
+        translateZ(37.5px);
+
+    background: linear-gradient(
+        to bottom,
+        hsl(330, 3.13%, 25.1%) 0%,
+        hsl(177.27, 21.71%, 32.06%) 5.5%,
+        hsl(176.67, 34.1%, 36.88%) 12.1%,
+        hsl(176.61, 42.28%, 40.7%) 19.6%,
+        hsl(176.63, 48.32%, 43.88%) 27.9%,
+        hsl(176.66, 53.07%, 46.58%) 36.6%,
+        hsl(176.7, 56.94%, 48.91%) 45.6%,
+        hsl(176.74, 62.39%, 50.91%) 54.6%,
+        hsl(176.77, 69.86%, 52.62%) 63.4%,
+        hsl(176.8, 76.78%, 54.08%) 71.7%,
+        hsl(176.83, 83.02%, 55.29%) 79.4%,
+        hsl(176.85, 88.44%, 56.28%) 86.2%,
+        hsl(176.86, 92.9%, 57.04%) 91.9%,
+        hsl(176.88, 96.24%, 57.59%) 96.3%,
+        hsl(176.88, 98.34%, 57.93%) 99%,
+        hsl(176.89, 99.07%, 58.04%) 100%
+    );
+}
+
+
+.cube-top {
+    position: absolute;
+
+    width: 75px;
+
+    height: 75px;
+
+    background: hsl(330, 3.13%, 25.1%);
+
+    transform:
+        rotateX(90deg)
+        translateZ(37.5px);
+
+    transform-style: preserve-3d;
+}
+
+
+.cube-top::before {
+    content: '';
+
+    position: absolute;
+
+    width: 75px;
+
+    height: 75px;
+
+    background: hsl(176.61, 42.28%, 40.7%);
+
+    transform: translateZ(-90px);
+
+    filter: blur(10px);
+
+    box-shadow:
+        0 0 10px #323232,
+        0 0 20px hsl(176.61, 42.28%, 40.7%),
+        0 0 30px #323232,
+        0 0 40px hsl(176.61, 42.28%, 40.7%);
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media screen and (max-width: 600px) {
+
+    header h1 {
+        font-size: 28px;
+    }
+
+
+    nav a {
+        display: block;
+
+        margin: 12px;
+    }
+
+
+    .home {
+        padding: 45px 15px;
+    }
+
+
+    .home-card {
+        width: 95%;
+    }
+
+
+    .app {
+        width: 92%;
+
+        padding: 30px 20px;
+    }
+
+
+    .search-box {
+        display: block;
+    }
+
+
+    input {
+        width: 100%;
+
+        margin-bottom: 15px;
+    }
+
+
+    .movie-card img {
+        width: 180px;
+
+        height: 270px;
+    }
+
+
+    .cube-loader {
+        width: 55px;
+
+        height: 55px;
+
+        transform: rotateX(-30deg) scale(0.73);
+    }
+
+}

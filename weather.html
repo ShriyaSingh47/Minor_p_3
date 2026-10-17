@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- 3D Cube -->
+
+    <div class="cube-loader">
+
+        <div class="cube-wrapper">
+
+            <div class="cube-span" style="--i:0"></div>
+            <div class="cube-span" style="--i:1"></div>
+            <div class="cube-span" style="--i:2"></div>
+            <div class="cube-span" style="--i:3"></div>
+
+            <div class="cube-top"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>🌤️ Weather App</h1>
+
+        <p>
+            Check Weather Information by City
+        </p>
+
+    </header>
+
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="weather.html">Weather</a>
+
+        <a href="movie.html">Movies</a>
+
+    </nav>
+
+
+    <!-- Weather App -->
+
+    <section class="app">
+
+        <h2>Search Weather</h2>
+
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="city"
+                placeholder="Enter city name"
+            >
+
+            <button onclick="getWeather()">
+                Search
+            </button>
+
+        </div>
+
+
+        <div id="weatherResult">
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 Weather App
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
